@@ -46,4 +46,10 @@ public function profiles()
     {
         return $this->belongsToMany('App\Models\Profile');
     }
+    
+public function api_keys()
+    {
+        return $this->belongsToMany('App\Models\ApiKeys');
+    }
+
 }

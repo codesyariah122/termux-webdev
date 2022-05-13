@@ -17,8 +17,8 @@ class AdministratorSeeder extends Seeder
     public function run()
     {
 $administrator = new User;
-        $administrator->name = "admin easynet";
-        $administrator->email = "admin@easynet.id";
+        $administrator->name = "admin talkies";
+        $administrator->email = "talkies@mail.id";
         $administrator->phone = "6288222668778";
         $administrator->roles = json_encode(["ADMIN"]);
         $administrator->photo = NULL;
@@ -30,7 +30,7 @@ $administrator = new User;
         $administrator->username = trim(preg_replace('/\s+/', '_', $administrator->name));
         $administrator->save();
         $administrator_profile = new Profile;
-        $administrator_profile->address = 'Jl. Taman Kopo Indah 3 Blk. E No.73, Rahayu,Kec. Margaasih, Kabupaten Bandung, Jawa Barat';
+        $administrator_profile->address = 'Jl. Kebun kacang No.2777';
         $administrator_profile->post_code = '40218';
         $administrator_profile->save();
         $administrator->profiles()->sync($administrator_profile->id);

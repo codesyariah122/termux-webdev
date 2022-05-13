@@ -8,7 +8,11 @@ use Illuminate\Http\Request;
 use App\Events\TestingEvent;
 class DataCenterController extends Controller
 {
-
+public function test_api(){
+  return response()->json([
+    'message' => 'Api is runing'
+  ]);
+}
      public function HeloEvent()
     {
         try{
