@@ -23,8 +23,8 @@ conposer require pusher/pusher-php-server
 **Running websocket**
 after running laraver serve, create new session terminal and type the command below
 ```
-php artisan websockets:
-```  
+php artisan websockets:serve
+```
 open in web browser
-http://localhost:8000/laravel-websockets  
+http://localhost:8000/laravel-websockets
 and connect to websockets port
