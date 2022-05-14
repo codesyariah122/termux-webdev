@@ -45,6 +45,7 @@
 </template>
 
 <script>
+  import moment from 'moment'
   import {
     random,
     time
@@ -64,7 +65,8 @@
         field: {},
         loading: null,
         tasks: [],
-        newData: null
+        newData: null,
+        timeNow: moment(new Date()).utc("+0700").locale("id").format("LLL")
       }
     },
 
@@ -94,7 +96,7 @@
           this.loading = true
           this.tasks.push({
             id: random(),
-            time: time(),
+            time: this.timeNow,
             judul: data.judul,
             finish: false
           })
@@ -148,7 +150,8 @@
       },
 
       FinishTask(id,
-        finish, text) {
+        finish,
+        text) {
         const swalWithBootstrapButtons = this.$swal.mixin({
           customClass: {
             confirmButton: 'btn btn-success btn-sm',
