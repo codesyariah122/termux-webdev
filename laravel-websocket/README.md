@@ -10,7 +10,7 @@ php artisan db:seed
 - configuration websocket
 - create pusher channel
 ```
-conposer require pusher/pusher-php-server
+composer require pusher/pusher-php-server
 ```
 **Websocket config**
 ```
