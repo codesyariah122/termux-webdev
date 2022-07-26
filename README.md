@@ -4,5 +4,8 @@
 
 ## NodeJS - LTS  
 ```
-# pkg install nodejs-lts
-```
+# pkg install nodejs-lts or nodejs
+```  
+
+## Documentation of termux  
+https://wiki.termux.com/index.php?title=Node.js&mobileaction=toggle_view_mobile
