@@ -5,7 +5,13 @@
 ## NodeJS - LTS  
 ```
 # pkg install nodejs-lts or nodejs
+# npm install -g yarn
 ```  
+### Dev project  
+```
+# yarn install
+# yarn serve
+```
 
 ## Documentation of termux  
 https://wiki.termux.com/index.php?title=Node.js&mobileaction=toggle_view_mobile
