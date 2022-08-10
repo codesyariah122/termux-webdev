@@ -118,7 +118,7 @@ mysqld_safe -u root &
 
 ***Access in web browser :***
 ```
-localhost:8080/phpmyadmin
+localhost:8081
 
 #Login with user root mariadb
 username: root
