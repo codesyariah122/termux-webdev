@@ -7,6 +7,9 @@
 # pkg install nodejs-lts or nodejs
 # npm install -g yarn
 ```  
+
+### using nvm
+<a href="https://github.com/nvm-sh/nvm">Node Version Manager</a>
 ### Dev project  
 ```
 # yarn install
